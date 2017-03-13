@@ -1,6 +1,12 @@
-:cachedir: 'cache/r10k'
+---
+cachedir: '/opt/puppetlabs/server/data/r10k'
 
-:sources:
-  :base:
-    remote: 'git@github.com:arjunprabhulal/puppet_control.git'
-    basedir: 'environments'
+sources:
+  production:
+   remote: 'git@github.com:arjunprabhulal/puppet_control.git'
+   basedir: '/etc/puppetlabs/code/environments'
+
+git:
+   provider: 'rugged'
+   private_key: '/root/.ssh/id_rsa'
+
