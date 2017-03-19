@@ -1,8 +1,0 @@
----
-:backends:
-  - yaml
-:hierarchy:
-  - "nodes/%{clientcert}"
-  - common
-:yaml:
-  :datadir: /etc/puppetlabs/code/environments/production/hiera
