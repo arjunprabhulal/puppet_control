@@ -19,3 +19,6 @@ mod 'puppet-r10k', '5.0.0'
 
 mod 'puppet_practice',
 	:git => 'git@github.com:arjunprabhulal/puppet_workspace.git'
+
+mod 'puppet_vim',
+	:git => 'git@github.com:arjunprabhulal/puppet_vim.git'
