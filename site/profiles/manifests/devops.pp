@@ -1,3 +1,9 @@
 class profiles::devops {
-	include jenkins
+
+      class{ 'jenkins':
+	config_hash => {
+		'HTTP_PORT' => { 'value' => '9090'},
+	}	
+      }	
+
 }
